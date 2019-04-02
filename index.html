@@ -14,27 +14,33 @@
       <h1>Site Heading</h1>
       <p>Site Intro</p>
     </div>
-    <form id="transportation_survey">
-      <div class="form-group">
-        <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-        <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
-        <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
-        <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
-        <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-        <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-        <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
-        <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
-        <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
-        <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-        <input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.<br>
-        <input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.<br>
-        <input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.<br>
-        <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
+    <form id="luck-survey">
+      <div class="form-group" id="luckyEvents" >
+        <p>In the past week, have you experienced any of the following lucky events?</p>
+        <input type="checkbox" name="lucky" value="dinosaur">Having a dinosaur on your monitor.<br>
+        <input type="checkbox" name="lucky" value="tea">Drinking Earl Grey tea.<br>
+        <input type="checkbox" name="lucky" value="elevator">Riding an elevator.<br>
+        <input type="checkbox" name="lucky" value="beanie">Wearing a beanie.<br>
+        <input type="checkbox" name="lucky" value="plant">Having a plant on your desk.<br>
+      </div>
+      <div class="form-group" id="unluckyEvents">
+        <p>In the past week, have you experienced any of the following unlucky events?</p>
+        <input type="checkbox" name="unlucky" value="dinosaur">Having a dinosaur on your face.<br>
+        <input type="checkbox" name="unlucky" value="tea">Spilling hot tea on yourself.<br>
+        <input type="checkbox" name="unlucky" value="elevator">Facing backwards in an elevator.<br>
+        <input type="checkbox" name="unlucky" value="hat">Wearing a top hat.<br>
+        <input type="checkbox" name="unlucky" value="plant">Having a dead plant on your desk.<br>
       </div>
       <button type="submit">Submit Survey</button>
     </form>
-    <span id="work-responses">
-    <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+    <span id="luckyOutput">
+      <p><b>You are lucky</b></p>
+    </span>
+    <span id="unluckyOutput">
+      <p><b>You are unlucky</b></p>
+    </span>
+    <span id="neutralOutput">
+      <p><b>You are neither lucky or unlucky</b></p>
     </span>
   </div>
 </body>
