@@ -5,13 +5,16 @@ $(function() {
     var luckyCount = [];
     var unluckyCount = [];
 
+    console.log("luckyCount", luckyCount);
+    console.log("unluckyCount", unluckyCount);
+
     $("input:checkbox[name=lucky]:checked").each(function() {
-      var luckyResponse = $(this).val();
+      var luckyResponse = luckyCount.push($(this).val());
+      console.log("luckyResponse", luckyResponse);
     });
     $("input:checkbox[name=unlucky]:checked").each(function() {
-      var unluckyResponse = $(this).val();
+      var unluckyResponse = unluckyCount.push($(this).val());
+      console.log("unluckyResponse", unluckyResponse);
     });
-
-    
   });
 });
