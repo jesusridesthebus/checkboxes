@@ -1,7 +1,6 @@
 $(function() {
   $("form#luck-survey").submit(function(event){
     event.preventDefault();
-    var responses = ["dinosaur", "tea", "elevator", "beanie", "plant"];
     var luckyCount = [];
     var unluckyCount = [];
 
@@ -16,5 +15,13 @@ $(function() {
       var unluckyResponse = unluckyCount.push($(this).val());
       console.log("unluckyResponse", unluckyResponse);
     });
+
+    if(luckyCount.length > unluckyCount.length) {
+      $("#luckyOutput").show();
+    } else if(unluckyCount.length > luckyCount.length) {
+      $("#unluckyOutput").show();
+    } else if(unluckyCount.length === luckyCount.length) {
+      $("#neutralOutput").show();
+    }
   });
 });
